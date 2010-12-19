@@ -105,6 +105,7 @@ module Bundler
         end
       end
       begin
+        #TODO: Copt gemspecs too
         FileUtils.cp_r installed_gem_map[gem_name_and_version(spec)], gem_dir
       rescue ArgumentError
       end
